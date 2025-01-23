@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3Quiz1</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style >
+		p{
+			text-align: center;
+		}
+		.Arithmetic{
+			justify-content: center	;
+			text-align: center;
+		}
+		.Comparison{
+			justify-content: center;
+			text-align: center;
+		}
+		.Logical{
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<h1 style="text-align: center;">If A is = 8 and B is = 30, compute for the following.</h1>
+	<br>
+
+	<script>
+		//declare all variables here
+		var a=8;
+		var b=30;
+		var c= a+b;
+		var d= a*b;
+	</script>
+	<div class="Arithmetic">
+	<h3 style="text-align: 	center	;">Arithmetic Calculator</h3>
+	<p> The sum of a and b is :</p>
+	<p id="display"></p>
+	<p> The product of a and b is :</p>
+	<p id="display$"></p>
+	<button type="button" class="btn btn-danger" onclick="document.getElementById('display').innerHTML = c ; document.getElementById('display$').innerHTML = d ;">
+	Show Solution:
+	</button>
+	</div>
+
+	<div class="Comparison">
+	<h3 style="text-align: 	center	;">Comparison Calculator</h3>
+	<p>Is a greater than b? :</p>
+	<p id="display2"></p>
+	<p>Is a equal to b? :</p>
+	<p id="display2$"></p>
+	<button type="button" class="btn btn-danger" onclick="document.getElementById('display2').innerHTML = 'False'; document.getElementById('display2$').innerHTML = 'False';">
+	Show Solution:
+	</button>
+	</div>
+
+	<div class="Logical">
+	<h3 style="text-align: 	center	;">Logical Calculator</h3>
+	<p>(a <= b) && (a >= b) :</p>
+	<p id="display3"></p>
+	<p>(a != b) || (a ==b) :</p>
+	<p id="display3$"></p>
+	<button type="button" class="btn btn-danger" onclick="document.getElementById('display3').innerHTML = 'False'; document.getElementById('display3$').innerHTML = 'True';">
+	Show Solution:
+	</button>
+	</div>
+
+
+</body>
+</html>
